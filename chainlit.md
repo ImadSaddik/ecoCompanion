@@ -1,0 +1,3 @@
+# Welcome to EcoCompanion! 🌿🤖
+
+Hello, Environmental Management Enthusiast! 👋 We're thrilled to introduce you to EcoCompanion, your go-to ChatBot for all things related to Environmental Management Systems (EMS) and ISO 14001. This powerful tool is designed to provide you with comprehensive answers to your queries, guide you through EMS processes, and assist you in navigating the intricacies of ISO 14001 standards.
