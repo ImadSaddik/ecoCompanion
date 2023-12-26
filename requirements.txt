@@ -1,0 +1,4 @@
+python-dotenv
+chromadb
+chainlit
+google.generativeai
