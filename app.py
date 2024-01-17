@@ -133,14 +133,11 @@ def make_prompt(query, relevant_passage):
     escaped = relevant_passage.replace(
         "'", "").replace('"', "").replace("\n", " ")
 
-    prompt = ("""
-              Vous êtes un expert utile et informatif qui répond aux questions liés à l'environnement. Assurez-vous de répondre par une phrase complète et comprenant toutes les informations générales pertinentes. Cependant, vous vous adressez à un public non spécialisé, alors assurez-vous de décomposer les concepts compliqués et adoptez un ton amical et conversationnel.
-              
-              QUESTION : '{query}'
-              PASSAGE : '{relevant_passage}'
-              
-              ANSWER:
-              """).format(query=query, relevant_passage=escaped)
+    prompt = f"""question : {query}.\n
+    Informations supplémentaires:\n {escaped}\n
+    Si vous trouvez que la question n'a aucun rapport avec les informations supplémentaires, vous pouvez l'ignorer et répond par 'OUT OF CONTEXT'.\n
+    Votre réponse :
+    """
 
     return prompt
 
